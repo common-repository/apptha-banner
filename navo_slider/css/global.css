@@ -1,0 +1,173 @@
+/*
+ ***********************************************************/
+/**
+ * @name          : Apptha WP Banner Image Slider.
+ * @version	      : 1.5
+ * @package       : apptha
+ * @since         : Wordpress 3.2.1
+ * @subpackage    : Apptha WP Banner Image Slider.
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license       : General Public License version 2 or later; see LICENSE.txt
+ * @Creation Date : July 20 2011
+ * @Modified Date : October 13 2011
+ * */
+
+/*
+ ***********************************************************/
+
+#navo_container { /*	width:980px;*/
+	margin: 0 auto;
+	position: relative;
+	background: #CCC;
+	border-bottom: 1px solid #AAA;
+}
+
+#apptha_inner { /*	width:900px;*/
+position: relative;
+}
+
+
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+.slides_container { /*	width:970px;*/
+	overflow: hidden;
+	position: relative;
+	
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+.slides_container div.slide {
+	height: 270px;
+	display: block;
+}
+
+/*
+	Next/prev buttons
+*/
+#slides .prev {
+	position: absolute;
+	
+	left: 0px;
+	width: 24px;
+	height: 43px;
+	display: block;
+	z-index: 101;
+}
+
+#slides .next {
+	position: absolute;
+	
+	right: 0px;
+	width: 24px;
+	height: 43px;
+	display: block;
+	z-index: 101;
+}
+
+#slides .next img,#slides .prev img {
+	display: block;
+}
+/*
+	Pagination
+*/
+.apptha_pagination {
+	width: auto;
+	clear: both;
+	display: inline-block;
+	
+	margin: 0 0 0 4px;
+	padding: 0px;
+	list-style: none;
+}
+
+.apptha_pagination li {
+	float: left;
+	margin: 5px 1px;
+	list-style: none;
+	height: 10px;
+    padding-top: 5px;
+    text-indent:0px;
+}
+
+.apptha_pagination li a {
+	display: block;
+	width: 12px;
+	height: 13px;
+	margin-top: 0px;
+        padding: 0px !important;
+	background-image: url(../img/pagination.png);
+	background-position: 0 0;
+	overflow: hidden;
+	text-indent: -999999px;
+}
+
+.apptha_pagination li.current a {
+	background-position: 0 -12px;
+        padding: 0px !important;
+}
+
+/*
+	Caption
+*/
+.apptha_clear {
+	clear: both;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	content: " ";
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+li.clearfix {
+	display: list-item;
+}
+
+.caption {
+	z-index: 500;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	min-height: 30px;
+	padding: 5px 0px 0 20px;
+	background: #000;
+	background: rgba(0, 0, 0, .5);
+	/*	width:920px;*/
+	font-size: 1.3em;
+	line-height: 1.33;
+	color: #fff;
+	border-top: 1px solid #000;
+	text-shadow: none;
+}
+
+.caption p {
+	margin-bottom: 5px;
+
+}
+.caption h2 {
+	margin: 0px;
+
+        font-weight: bold;
+}

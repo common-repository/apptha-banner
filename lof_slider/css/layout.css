@@ -1,0 +1,159 @@
+/*
+ ***********************************************************/
+/**
+ * @name          : Apptha WP Banner Image Slider.
+ * @version	      : 1.5
+ * @package       : apptha
+ * @since         : Wordpress 3.2.1
+ * @subpackage    : Apptha WP Banner Image Slider.
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license       : General Public License version 2 or later; see LICENSE.txt
+ * @Creation Date : July 20 2011
+ * @Modified Date : October 13 2011
+ * */
+
+/*
+ ***********************************************************/
+/* CSS Document */
+.apptha_clear
+{
+	clear:both;
+	}
+.lof-slidecontent{
+	position:relative;
+	overflow:hidden;
+	width:892px;
+	height:300px;
+}
+	ul.lof-main-wapper li {
+		position:relative;
+	}
+.lof_clear
+{
+    float:left;
+   width: 50%;
+   
+}
+.lof-slidecontent .preload{
+	height:100%;
+	width:100%;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	color:#FFF;
+	text-align:center
+}
+.lof-slidecontent .preload div{
+	height:100%;
+	width:100%;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+}
+.lof-main-outer{
+	position:relative;
+	height:100%;
+	width:600px;
+	z-index:3px;
+	overflow:hidden;
+}
+
+
+/*******************************************************/
+
+/* main flash */
+ul.lof-main-wapper{
+	/* margin-right:auto; */
+	overflow:hidden;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+	padding:0px;
+	margin:0;
+	position:absolute;
+	overflow:hidden;
+}
+
+ul.lof-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	height:100%;
+	list-style:none;
+	float:left;
+}
+.lof-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+        list-style:none;
+}
+ul.lof-main-wapper li img{
+	padding:0px;
+        width:100%;
+	
+}
+
+
+/* item navigator */
+ul.lof-navigator{
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	width:100%;
+}
+ul.lof-navigator li{
+	cursor:hand;
+	cursor:pointer;
+	list-style:none;
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+
+}
+.lof-navigator-outer{
+	position:relative;
+        float:left;
+	height:100%;
+	overflow:hidden;
+        background: #ccc;
+}
+
+.lof-navigator li h3{
+
+	padding:15px 0 0 !important;
+	margin:0 !important;
+}
+.lof-navigator li .right_tab{
+	
+	height:100%;
+	position:relative;
+	margin-left:0px;
+	padding-left:15px;
+	
+}
+           .lof-main-outer
+           {
+             width: 70%;
+             float: left;
+           }
+            .lof-navigator-outer
+            {
+              width: 30%;
+              margin-top: -3px;
+            }
+
+.lof-navigator li img{
+	height:45px;
+	width:30%;
+	margin:9px 15px 10px 0px;
+	float:left;
+	padding:3px;
+	border:#C5C5C5 solid 1px;
+}
+.lof-navigator li.active img{
+	border:#6C8E5C  solid 1px;
+}
+
